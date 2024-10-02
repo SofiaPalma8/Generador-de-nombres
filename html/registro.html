@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Name Generator - Register</title>
+    <link rel="stylesheet" href="registro.css"> <!-- Asegúrate de que sea el mismo CSS que para el login -->
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="C:\Users\MINEDUCYT\Downloads\lol.png" alt="Logo" class="logo" /> <!-- Agrega tu logo aquí -->
+        </div>
+        <h1>Baby Name Generador</h1>
+        <form id="register-form" class="login-form" onsubmit="return false;"> <!-- Evita que se envíe el formulario -->
+            <h2>Register</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="button" onclick="redirectToPage()">Register</button> <!-- Cambiado a tipo "button" -->
+            <p class="register-link">Do you have an account? <a href="login.html">Login here</a></p>
+        </form>
+    </div>
+    <script>
+        function redirectToPage() {
+            window.open('file:///C:/Users/MINEDUCYT/Desktop/Generador%20de%20nombres%20para%20bebés/home%20page/hp.html', '_blank'); // Redirección
+        }
+    </script>
+    <script src="js/login.js"></script>
+</body>
+</html>

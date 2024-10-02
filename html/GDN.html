@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="GDN.css">
+    <title>Generador de Nombres para Bebés</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Name Bliss</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\Generador de nombres para bebés\home page\hp.html">Inicio</a></li>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\Generador de nombres para bebés\html\GDN.html">Generador</a></li>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\Generador de nombres para bebés\contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Generador de Nombres para Bebés</h1>
+        
+        <label for="categoria">Selecciona una categoría:</label>
+        <select id="categoria">
+            <option value="masculino">Masculinos</option>
+            <option value="femenino">Femeninos</option>
+            <option value="niñe">Niñe</option>
+        </select>
+        
+        <label for="estrategia">Selecciona una estrategia:</label>
+        <select id="estrategia">
+            <option value="aleatorio">Aleatorio</option>
+            <option value="popular">Popular</option>
+        </select>
+        
+        <label for="apellido1">Primer Apellido:</label>
+        <input type="text" id="apellido1" placeholder="Ingresa el primer apellido">
+        
+        <label for="apellido2">Segundo Apellido:</label>
+        <input type="text" id="apellido2" placeholder="Ingresa el segundo apellido">
+        
+        <button id="generar">Generar Nombre Completo</button>
+        
+        <div class="nombre" id="nombre"></div>
+    </div>
+
+    <script src="GDN.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+Este sitio web se llama "Name Bliss" y es un generador de nombres basico diseñado para ayudar a los  padres a encontrar el nombre perfecto para sus bebés. Mi sitio consta de tres secciones: la página de inicio, el generador de nombres y la sección de contacto.
+
+Funcionalidad del Generador de Nombres
+
+En el generador, los usuarios pueden seleccionar el género del bebé (masculino, femenino o niñe (osea, Unisex lol)), así como la estrategia de generación de nombres (aleatorio o popular).  Luego, deben ingresar los dos apellidos del bebé. Al hacer clic en el botón de "Generar Nombre Completo", la aplicación devuelve dos nombres que son apropiados para el género seleccionado, junto con los apellidos proporcionados. Esto permite a los usuarios ver cómo su elección de nombres se combina con los apellidos, facilitando la decisión final.
+
+Los Patrones de Diseño Implementados
+
+Factory Pattern (Patrón de Fábrica): Lo utiliza para crear instancias de generadores de nombres según la estrategia elegida por el usuario. defini dos clases específicas (RandomNameGenerator y PopularNameGenerator) que extienden una clase base llamada NameGenerator. La clase NameFactory es responsable de crear el generador adecuado en función de la estrategia seleccionada. Este patrón permite la creación flexible de objetos sin necesidad de especificar la clase exacta del objeto que se va a crear. Así, se mantiene la separación de la lógica de generación de nombres y la implementación específica de cada estrategia, facilitando futuras extensiones del código.
+
+Strategy Pattern (Patrón de Estrategia): Este lo aplique para  permitir que el generador de nombres utilice diferentes algoritmos para generar nombres, dependiendo de la estrategia seleccionada por el usuario. En este caso, se ofrecen dos estrategias: una que genera nombres aleatorios y otra que genera nombres populares. Esta separación de comportamientos permite modificar o agregar nuevas estrategias sin cambiar la lógica del generador de nombres en sí. Los usuarios pueden seleccionar la estrategia que mejor se adapte a sus preferencias, lo que hace que el sistema sea más flexible y adaptable a las necesidades de los usuarios.

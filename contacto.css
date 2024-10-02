@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #e2eafc);
+    color: #001233;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #bbd0ff;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-name {
+    color: #001233;
+    font-size: 2em;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+.tabs a:hover {
+    text-decoration: underline;
+}
+
+#contacto {
+    padding: 20px;
+    text-align: left;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+}
+
+.red {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.logo-red {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
